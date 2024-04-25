@@ -4,12 +4,20 @@ class Node:
         self.right = None
         self.val = val
 
-def insert(root, val):
+def insert(root, node):
     if root is None:
-        return Node(val)
+        root = node
     else:
-        if root.val < val:
-            root.right = insert(root.right, val)
+        if root.data > node.data:
+            if root.left is None:
+                root.left = node
+            else:
+                insert(root.left, node)
         else:
-            root.left = insert(root.left, val)
-    return root
+            if root.right is None:
+                root.right = node
+            else:
+                insert(root.right, node)
+
+def in_order_print(root):
+    if 
