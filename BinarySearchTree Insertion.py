@@ -25,3 +25,10 @@ def in_order_print(root):
     in_order_print(root.left)
     print(root.data)
     in_order_print(root.right)
+
+def pre_order_print(root):
+    if not root:
+        return
+    print(root.data)
+    pre_order_print(root.left)
+    pre_order_print(root.right)
