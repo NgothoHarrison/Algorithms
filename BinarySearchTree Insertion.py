@@ -32,3 +32,10 @@ def pre_order_print(root):
     print(root.data)
     pre_order_print(root.left)
     pre_order_print(root.right)
+
+def post_order_print(root):
+    if not root:
+        return
+    post_order_print(root.left)
+    post_order_print(root.right)
+    print(root.data)
