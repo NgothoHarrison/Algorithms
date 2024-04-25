@@ -20,4 +20,8 @@ def insert(root, node):
                 insert(root.right, node)
 
 def in_order_print(root):
-    if 
+    if not root:
+        return
+    in_order_print(root.left)
+    print(root.data)
+    in_order_print(root.right)
