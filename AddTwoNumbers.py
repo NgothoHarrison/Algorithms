@@ -29,3 +29,8 @@ class Solution:
             current.next = ListNode(sum % 10)
             current = current.next
         return dummy.next
+    
+# Time complexity: O(max(m, n))
+# Space complexity: O(max(m, n))
+# Where m and n are the lengths of the two linked lists.
+    
