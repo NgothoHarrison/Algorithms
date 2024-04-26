@@ -34,3 +34,12 @@ class Solution:
 # Space complexity: O(max(m, n))
 # Where m and n are the lengths of the two linked lists.
     
+# Example
+l1 = ListNode(2)
+l1.next = ListNode(4)
+l1.next.next = ListNode(3)
+
+l2 = ListNode(5)
+l2.next = ListNode(6)
+l2.next.next = ListNode(4)
+print(Solution().addTwoNumbers(l1, l2).val) # 7
